@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+    overflow-y: hidden;
+}
+.container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.game {
+    text-align: center;
+}
+.board {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    gap: 5px;
+}
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 24px;
+    cursor: pointer;
+}
+.message {
+    margin: 20px 0;
+    font-size: 20px;
+}
+#restartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: none; 
+}
+@keyframes growShrink {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.grow-shrink-animated {
+    animation: growShrink 0.3s ease-in-out;
+}

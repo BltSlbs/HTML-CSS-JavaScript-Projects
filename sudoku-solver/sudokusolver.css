@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-weight: bold;
+    color: #444;
+}
+
+.sudoku-wrapper{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    border: 5px solid #555;
+}
+
+.cell{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #aaa;
+    transition: all 0.2s ease-in-out;
+}
+
+table tr:nth-child(3n) td{
+    border-bottom: 3px solid #555;
+}
+
+table td:nth-child(3n){
+    border-right: 3px solid #555;
+}
+
+input:focus {
+    background-color: #f5f5f5;
+}
+
+button{
+    margin-top: 25px;
+    padding: 12px 24px;
+    font-size: 17px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #388e3c;
+}
+
+.finished{
+    background-color: #a5d6a7;
+}

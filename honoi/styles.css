@@ -1,0 +1,120 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: lightblue;
+}
+#canves {
+    width: 395px;
+    height: 240px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+#score-panel {
+    width: 180px;
+    height: 53px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    text-align: center;
+}
+#score-panel li:last-child {
+    font-family: 'Coda', cursive;
+    display: block;
+    font-size: 7px;
+    line-height: 1;
+}
+#restartGame {
+    cursor: pointer;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    font-size: 21px;
+    transform: translateX(-50%);
+}
+#restartGame:hover {
+    background-color: darkgreen;
+}
+.tower {
+    width: 115px;
+    height: 117px;
+    border-bottom: 5px solid #000000;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0 25px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+#tower-3 {
+    margin: 0;
+}
+.tower:before {
+    width: 4px;
+    height: 116px;
+    content: '';
+    display: block;
+    background: #000000;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% - 2px);
+    z-index: 10;
+    border-radius: 30px;
+}
+.disk {
+    list-style: none;
+    height: 16px;
+    display: block;
+    border-radius: 9px;
+    font-size: 0;
+    z-index: 20;
+}
+.disk.hold {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.disk-1 {
+    width: 17.5px;
+    background-color: rgb(233, 29, 63);
+}
+.disk-2 {
+    width: 35px;
+    background-color: purple;
+}
+.disk-3 {
+    width: 52.5px;
+    background-color: blue;
+}
+.disk-4 {
+    width: 70px;
+    background-color: blueviolet;
+}
+.disk-5 {
+    width: 87.5px;
+    background-color: green;
+}
+.disk-6 {
+    width: 105px;
+    background-color: yellow;
+}
+.disk-7 {
+    width: 122.5px;
+    background-color: orange;
+}

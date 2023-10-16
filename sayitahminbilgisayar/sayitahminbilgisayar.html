@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu (Bilgisayar)</title>
+    <link rel="stylesheet" href="sayitahminbilgisayar.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tahminim:</h2>
+        <p id="computerGuess">...</p>
+        <div class="buttons">
+            <button onclick="isLower()">Yanlış! Aklımdaki Sayı Daha Düşük</button>
+            <button onclick="isCorrect()">Aklımdaki Sayıyı Doğru Tahmin Ettin!</button>
+            <button onclick="isHigher()">Yanlış! Aklımdaki Sayı Daha Yüksek</button>
+        </div>
+        <p id="feedback"></p>
+    </div>
+    <script src="sayitahminbilgisayar.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Oyunu</title>
+    <link rel="stylesheet" href="sayitahmin.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Hadi Tuttuğum Sayıyı Bil </h1>
+        <h2>Başlayabilirsin Tuttuğum Sayıyı Tahmin Et Ve Aşağıya Yaz</h2>
+        <p>1 - 100 arasında bir sayı gir:</p>
+        <input type="number" id="tahmin" min="1" max="100">
+        <button onclick="checkGuess()">Tahmin Et</button>
+        <p id="feedback"></p>
+    </div>
+    <script src="sayitahmin.js"></script>
+</body>
+
+</html>
